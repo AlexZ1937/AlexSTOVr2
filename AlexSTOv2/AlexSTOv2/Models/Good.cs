@@ -10,10 +10,13 @@ namespace AlexSTOv2.Models
         public int GoodID { get; set; }
         public string Name { get; set; }
 
-        public Good(int GoodID_, string Name_)
+        public decimal Price { get; set; }
+
+        public Good(int GoodID_, string Name_, decimal Price_)
         {
             this.GoodID = GoodID_;
             this.Name = Name_;
+            this.Price = Price_;
         }
     }
 }
