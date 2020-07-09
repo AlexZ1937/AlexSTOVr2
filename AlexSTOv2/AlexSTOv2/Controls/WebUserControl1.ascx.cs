@@ -13,7 +13,7 @@ namespace GameStore.Controls
 
         }
 
-        protected IEnumerable<string> GetCategories()  => new Repository().Categories.Select(p => p.Name).Distinct().OrderBy(x => x);
+        protected IEnumerable<string> GetCategories() => new Repository().Categories.Select(p => p.Name).Distinct().OrderBy(x => x);
         protected string CreateHomeLinkHtml()
         {
             string path = RouteTable.Routes.GetVirtualPath(null, null).VirtualPath;
@@ -23,7 +23,7 @@ namespace GameStore.Controls
         protected string CreateLinkHtml(string category)
         {
             string selectedCategory = (string)Page.RouteData.Values["category"] ?? Request.QueryString["category"];
-            string path = RouteTable.Routes.GetVirtualPath(null, null, new RouteValueDictionary() { { "category", category}, { "page", "1"} }).VirtualPath;
+            string path = RouteTable.Routes.GetVirtualPath(null, null, new RouteValueDictionary() { { "category", category }, { "page", "1" } }).VirtualPath;
             return string.Format("<a href='{0}' {1}> {2} </a>", path, category == selectedCategory ? "class='selected'" : "", category);
         }
     }

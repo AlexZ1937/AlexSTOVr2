@@ -10,6 +10,6 @@
 namespace AlexSTOv2.Controls {
     
     
-    public partial class CategoryList {
+    public partial class WebUserControl1 {
     }
 }
