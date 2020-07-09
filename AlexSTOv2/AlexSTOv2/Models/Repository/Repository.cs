@@ -18,6 +18,13 @@ namespace AlexSTOv2.Models.Repository
 
         public IEnumerable<Car> Cars { get { return context.Cars; } }
 
-    
+        public IEnumerable<Category> Categories { get { return context.Categories; } }
+
+        public IEnumerable<Cart> Carts { get { return context.Carts; } }
+
+        public IEnumerable<Order> Orders { get { return context.Orders; } }
+
+
+
     }
 }

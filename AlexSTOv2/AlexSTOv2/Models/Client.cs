@@ -14,6 +14,11 @@ namespace AlexSTOv2.Models
         public bool Status { get; set; }
         public Cart MyCart { get; set; }
 
+        public Client()
+        {
+           
+        }
+
         public Client(int ClientID_, string FIO_, string Phone_, string Adress_, bool Status_, Cart CartID_)
         {
             this.ClientID = ClientID_;

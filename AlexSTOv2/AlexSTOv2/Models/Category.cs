@@ -10,6 +10,11 @@ namespace AlexSTOv2.Models
         public int CategoryID { get; set; }
         public string Name { get; set; }
 
+        public Category()
+        {
+         
+        }
+
         public Category(int CategoryID_, string Name_)
         {
             this.CategoryID = CategoryID_;

@@ -12,6 +12,11 @@ namespace AlexSTOv2.Models
         public string CarType { get; set; }
         public string CarColor { get; set; }
 
+        public Car()
+        {
+            
+        }
+
         public Car(int CarID_, string CarName_, string CarType_, string CarColor_)
         {
             this.CarID = CarID_;

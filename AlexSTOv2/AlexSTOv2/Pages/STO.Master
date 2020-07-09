@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="STO.Master.cs" Inherits="AlexSTOv2.Pages.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link rel="stylesheet" href="../Content/Style.css">
+    <title>STO</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+          <div id="header">]
+              <div class="title">Just STO</div>
+          </div>
+          <div id="rightlist">
+
+          </div>
+        <div>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"/>
+        </div>
+    </form>
+</body>
+</html>

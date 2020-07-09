@@ -12,6 +12,11 @@ namespace AlexSTOv2.Models
 
         public decimal Price { get; set; }
 
+        public Good()
+        {
+           
+        }
+
         public Good(int GoodID_, string Name_, decimal Price_)
         {
             this.GoodID = GoodID_;

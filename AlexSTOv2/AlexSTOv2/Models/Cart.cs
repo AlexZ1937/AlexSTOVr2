@@ -12,6 +12,11 @@ namespace AlexSTOv2.Models
         public decimal Price { get; set; }
         public IEnumerable<Service> MyServices { get; set; }
 
+        public Cart()
+        {
+           
+        }
+
         public Cart(int ID_, int SKindex_, decimal Price_, IEnumerable<Service> Service_ServiceId_)
         {
             this.ID = ID_;

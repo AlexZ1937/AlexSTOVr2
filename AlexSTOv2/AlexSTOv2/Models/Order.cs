@@ -12,6 +12,11 @@ namespace AlexSTOv2.Models
 
         public decimal Price { get; set; }
 
+        public Order()
+        {
+            
+        }
+
         public Order(int OrderId_, Good Good_Id_,decimal Price_)
         {
             this.OrderId = OrderId_;

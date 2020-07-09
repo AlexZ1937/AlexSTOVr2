@@ -75,6 +75,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -88,10 +89,18 @@
     <Compile Include="Models\Repository\EDBContext.cs" />
     <Compile Include="Models\Repository\Repository.cs" />
     <Compile Include="Models\Service.cs" />
+    <Compile Include="Pages\STO.Master.cs">
+      <DependentUpon>STO.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\STO.Master.designer.cs">
+      <DependentUpon>STO.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="Pages\STO.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -100,9 +109,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Content\" />
     <Folder Include="Controls\" />
-    <Folder Include="Pages\" />
     <Folder Include="Scripts\" />
   </ItemGroup>
   <PropertyGroup>

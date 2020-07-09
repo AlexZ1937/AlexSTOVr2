@@ -15,6 +15,11 @@ namespace AlexSTOv2.Models
         public decimal Price { get; set; }
         public Order MyOrder { get; set; }
 
+        public Service()
+        {
+           
+        }
+
         public Service(int ServiceId_, Category CategoryId_, Master MasterId_, Car CarId_, Order MyOrder_,decimal Price_, string Descript_)
         {
             this.ServiceId = ServiceId_;
