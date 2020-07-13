@@ -3,17 +3,26 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Routing;
+using System.Web.Services.Description;
 
 namespace GameStore.Controls
 {
-    public partial class CategoryList : System.Web.UI.UserControl
+    public partial class WebUserControl1 : System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-
-        protected IEnumerable<string> GetCategories() => new Repository().Categories.Select(p => p.Name).Distinct().OrderBy(x => x);
+        /// <summary>
+        /// ////////////////////////
+        /// </summary>
+        /// <returns></returns>
+        
+        /// <returns></returns>
+        public IEnumerable<string> GetCategories()
+        {
+            return new Repository().Categories.Select(p => p.Name).Distinct().OrderBy(x => x);
+        }
         protected string CreateHomeLinkHtml()
         {
             string path = RouteTable.Routes.GetVirtualPath(null, null).VirtualPath;

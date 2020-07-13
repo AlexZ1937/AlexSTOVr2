@@ -2,9 +2,11 @@
 <%@ Import Namespace="System.Web.Routing" %>
 <asp:Content ContentPlaceHolderID="bodyContent" runat="server">
     <div id="content">
+  
       <asp:Repeater ItemType="AlexSTOv2.Models.Service" SelectMethod="GetServices" runat="server">
           <ItemTemplate>
               <div class="item">
+                  <
                   <h3><%# Item.MyOrder.MyGood %></h3>
                   <%# Item.Description %>
                   <h4> <%# Item.Price.ToString("c") %></h4>
