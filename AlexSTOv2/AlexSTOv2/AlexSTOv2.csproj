@@ -77,18 +77,28 @@
   <ItemGroup>
     <Content Include="Content\Style.css" />
     <Content Include="Content\StyleAdmin.css" />
-    <Content Include="Controls\WebUserControl1.ascx" />
+    <Content Include="Controls\SomeList.ascx" />
     <Content Include="Pages\Listing.aspx" />
+    <None Include="Scripts\jquery-3.5.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.5.1.js" />
+    <Content Include="Scripts\jquery-3.5.1.min.js" />
+    <Content Include="Scripts\jquery-3.5.1.slim.js" />
+    <Content Include="Scripts\jquery-3.5.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controls\WebUserControl1.ascx.cs">
-      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+    <Compile Include="Controls\SomeList.ascx.cs">
+      <DependentUpon>SomeList.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Controls\WebUserControl1.ascx.designer.cs">
-      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+    <Compile Include="Controls\SomeList.ascx.designer.cs">
+      <DependentUpon>SomeList.ascx</DependentUpon>
     </Compile>
     <Compile Include="Models\Car.cs" />
     <Compile Include="Models\Cart.cs" />
@@ -128,6 +138,8 @@
     <None Include="packages.config" />
     <Content Include="Pages\STO.Master" />
     <Content Include="Pages\Admin\Admin.Master" />
+    <Content Include="Scripts\jquery-3.5.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.5.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -135,9 +147,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Scripts\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

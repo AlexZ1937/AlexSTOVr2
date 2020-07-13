@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Routing;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -12,6 +13,17 @@ namespace AlexSTOv2.Pages.Admin
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private string GenerateUrl(string routeName) => RouteTable.Routes.GetVirtualPath(null, routeName, null).VirtualPath;
+
+        public string OrdersUrl
+        {
+            get { return GenerateUrl("admin_orders"); }
+        }
+        public string GamesUrl
+        {
+            get { return GenerateUrl("admin_games"); }
         }
     }
 }

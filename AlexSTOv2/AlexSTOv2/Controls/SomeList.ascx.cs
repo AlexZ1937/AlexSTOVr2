@@ -2,13 +2,16 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Web;
 using System.Web.Routing;
-using System.Web.Services.Description;
+using System.Web.UI;
+using System.Web.UI.WebControls;
 
-namespace GameStore.Controls
+namespace AlexSTOv2.Controls
 {
-    public partial class WebUserControl1 : System.Web.UI.UserControl
+    public partial class SomeList : System.Web.UI.UserControl
     {
+     
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -17,7 +20,7 @@ namespace GameStore.Controls
         /// ////////////////////////
         /// </summary>
         /// <returns></returns>
-        
+
         /// <returns></returns>
         public IEnumerable<string> GetCategories()
         {
