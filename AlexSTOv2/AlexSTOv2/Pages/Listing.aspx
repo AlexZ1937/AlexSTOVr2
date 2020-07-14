@@ -19,12 +19,12 @@
     </div>
     <div class="pager">
         <%
-// for (int i = 1; i <= MaxPage; i++)
-//{
-//    string selectedCategory = (string)Page.RouteData.Values["category"] ?? Request.QueryString["category"];
-//    string path = RouteTable.Routes.GetVirtualPath(null, null, new RouteValueDictionary() { { "category", selectedCategory}, { "page", i} }).VirtualPath;
-//    Response.Write(String.Format("<a href='{0}' {1}>{2}</a>", path, i == CurrentPage ? "class='selected'" : "", i));
-//}
+            for (int i = 1; i <= MaxPage; i++)
+            {
+                string selectedCategory = (string)Page.RouteData.Values["category"] ?? Request.QueryString["category"];
+                string path = RouteTable.Routes.GetVirtualPath(null, null, new RouteValueDictionary() { { "category", selectedCategory }, { "page", i } }).VirtualPath;
+                Response.Write(String.Format("<a href='{0}' {1}>{2}</a>", path, i == CurrentPage ? "class='selected'" : "", i));
+            }
         %>
     </div>
 </asp:Content>

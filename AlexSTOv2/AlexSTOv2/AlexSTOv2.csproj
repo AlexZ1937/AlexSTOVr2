@@ -78,6 +78,7 @@
     <Content Include="Content\Style.css" />
     <Content Include="Content\StyleAdmin.css" />
     <Content Include="Controls\SomeList.ascx" />
+    <Content Include="Global.asax" />
     <Content Include="Pages\Listing.aspx" />
     <None Include="Scripts\jquery-3.5.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.5.1.js" />
@@ -99,6 +100,9 @@
     </Compile>
     <Compile Include="Controls\SomeList.ascx.designer.cs">
       <DependentUpon>SomeList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Car.cs" />
     <Compile Include="Models\Cart.cs" />

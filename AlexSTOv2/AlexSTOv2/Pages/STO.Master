@@ -15,7 +15,7 @@
               <div class="title">Just STO</div>
           </div>
           <div id="categories">        
-            <GS:CategoryLinks runat="server" />
+            <GS:SomeList runat="server" />
           </div>
         <div>
 

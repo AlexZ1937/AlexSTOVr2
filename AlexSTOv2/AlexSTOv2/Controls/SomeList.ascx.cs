@@ -28,7 +28,7 @@ namespace AlexSTOv2.Controls
         }
         protected string CreateHomeLinkHtml()
         {
-            string path = RouteTable.Routes.GetVirtualPath(null, null).VirtualPath;
+            string path = RouteTable.Routes.GetVirtualPath(null , null).VirtualPath;
             return string.Format("<a href='{0}'>Главная страница</a>", path);
         }
 
