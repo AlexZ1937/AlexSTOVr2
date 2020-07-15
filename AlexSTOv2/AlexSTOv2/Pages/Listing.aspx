@@ -6,8 +6,8 @@
       <asp:Repeater ItemType="AlexSTOv2.Models.Service" SelectMethod="GetServices" runat="server">
           <ItemTemplate>
               <div class="item">
-                  <
-                  <h3><%# Item.MyOrder.MyGood %></h3>
+                  
+                  <h3><%# Item.MyOrder.MyGood.Name %></h3>
                   <%# Item.Description %>
                   <h4> <%# Item.Price.ToString("c") %></h4>
                   <button name="add" type="submit" value="<%# Item.ServiceId %>">

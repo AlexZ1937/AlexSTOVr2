@@ -59,8 +59,8 @@ namespace AlexSTOv2.Pages
                 string currentCategory = (string)RouteData.Values["category"] ??
                     Request.QueryString["category"];
                 return currentCategory == null ? Services : Services.Where(p => p.MyCategory.Name == currentCategory);
-        }
-            protected void Page_Load(object sender, EventArgs e)
+            }
+        protected void Page_Load(object sender, EventArgs e)
             {
                 if (IsPostBack)
                 {
