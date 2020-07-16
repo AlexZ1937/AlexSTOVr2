@@ -35,6 +35,21 @@ div#nav {
     padding: 5px;
 }
 
+#Button1 {
+    float: left;
+    color: darkgray;
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+
+#Button2 {
+    float: left;
+    color: darkgray;
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+
+
 #ordersCheck {
     font: bold 1.1em "Arial Narrow","Franklin Gothic Medium",Arial;
     margin-top: 10px;

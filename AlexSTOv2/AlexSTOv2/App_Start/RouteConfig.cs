@@ -14,6 +14,10 @@ namespace AlexSTOv2
             routes.MapPageRoute("cart", "cart", "~/Pages/CartView.aspx");
 
             routes.MapPageRoute("checkout", "checkout", "~/Pages/Checkout.aspx");
+
+            routes.MapPageRoute("admin_goodts", "admin/goodts", "~/Pages/Admin/Goodts.aspx");
+
+            routes.MapPageRoute("admin_services", "admin/services", "~/Pages/Admin/Services.aspx");
         }
     }
 }

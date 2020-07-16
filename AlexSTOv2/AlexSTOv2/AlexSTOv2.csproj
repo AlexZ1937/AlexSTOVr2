@@ -79,6 +79,7 @@
     <Content Include="Content\StyleAdmin.css" />
     <Content Include="Controls\SomeList.ascx" />
     <Content Include="Global.asax" />
+    <Content Include="Pages\Admin\Goodts.aspx" />
     <Content Include="Pages\Admin\Services.aspx" />
     <Content Include="Pages\Listing.aspx" />
     <None Include="Scripts\jquery-3.5.1.intellisense.js" />
@@ -124,6 +125,13 @@
     </Compile>
     <Compile Include="Pages\Admin\Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\Goodts.aspx.cs">
+      <DependentUpon>Goodts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin\Goodts.aspx.designer.cs">
+      <DependentUpon>Goodts.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Admin\Services.aspx.cs">
       <DependentUpon>Services.aspx</DependentUpon>

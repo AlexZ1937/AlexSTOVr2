@@ -17,13 +17,13 @@ namespace AlexSTOv2.Pages.Admin
 
         private string GenerateUrl(string routeName) => RouteTable.Routes.GetVirtualPath(null, routeName, null).VirtualPath;
 
-        public string OrdersUrl
+        public string GoodtsUrl
         {
-            get { return GenerateUrl("admin_orders"); }
+            get { return GenerateUrl("admin_goodts"); }
         }
-        public string GamesUrl
+        public string ServicesUrl
         {
-            get { return GenerateUrl("admin_games"); }
+            get { return GenerateUrl("admin_services"); }
         }
     }
 }
