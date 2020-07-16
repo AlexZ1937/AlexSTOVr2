@@ -26,5 +26,48 @@ namespace AlexSTOv2.Models.Repository
 
 
 
+
+
+
+        public void SaveService(Service serv)
+        {
+            if (serv.ServiceId == 0)
+            {
+                serv = context.Services.Add(serv);
+
+
+            }
+            else
+            {
+                Service dbserv = context.Services.Find(serv.ServiceId);
+                if (dbserv != null)
+                {
+                    //dbserv.MyCar. = game.Name;
+                    //dbserv.Price = game.Price;
+                    //dbserv.Category = game.Category;
+                    //dbserv.Description = game.Description;
+                }
+            }
+            context.SaveChanges();
+        }
+        public void DeleteGame(Service serv)
+        {
+            //IEnumerable<Order> orders = context.Orders.
+            //    Include(
+            //        o => o.OrderLines.Select(
+            //            ol => ol.Game))
+            //        .Where(
+            //            o => o.OrderLines.Count(
+            //                ol => ol.Game.GameId == game.GameId) > 0
+            //               ).ToArray();
+            //foreach (Order order in orders)
+            //{
+            //    context.Orders.Remove(order);
+            //}
+            //context.Services.Remove(serv);
+            //context.SaveChanges();
+        }
+
+
     }
 }

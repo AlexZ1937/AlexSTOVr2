@@ -8,8 +8,7 @@ namespace AlexSTOv2.Models
     public class Order
     {
         public int OrderId { get; set; }
-        public Good MyGood { get; set; }
-
+        public virtual Good MyGood { get; set; }
         public decimal Price { get; set; }
 
         public Order()

@@ -7,6 +7,7 @@ namespace AlexSTOv2.Models
 {
     public class Good
     {
+
         public int GoodID { get; set; }
         public string Name { get; set; }
 

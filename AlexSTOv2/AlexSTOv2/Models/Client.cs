@@ -12,7 +12,7 @@ namespace AlexSTOv2.Models
         public string Phone { get; set; }
         public string Adress { get; set; }
         public bool Status { get; set; }
-        public Cart MyCart { get; set; }
+        public virtual Cart MyCart { get; set; }
 
         public Client()
         {

@@ -58,8 +58,18 @@ namespace AlexSTOv2.Pages
                 IEnumerable<Service> Services = repository.Services;
                 string currentCategory = (string)RouteData.Values["category"] ??
                     Request.QueryString["category"];
+            //Services.Where(k => k.MyCategory.Name == currentCategory).FirstOrDefault().MyOrder=new Order(1,new Good(1,"hello",34),34);
+            
+
                 return currentCategory == null ? Services : Services.Where(p => p.MyCategory.Name == currentCategory);
             }
+
+
+
+
+
+
+
         protected void Page_Load(object sender, EventArgs e)
             {
                 if (IsPostBack)

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -8,13 +9,14 @@ namespace AlexSTOv2.Models
 {
     public class Service
     {
+        
         public int ServiceId { get; set; }
-        public Category MyCategory { get; set; }
-        public Master TMaster { get; set; }
-        public Car MyCar { get; set; }
+        public virtual Category MyCategory { get; set; }
+        public virtual Master TMaster { get; set; }
+        public virtual Car MyCar { get; set; }
         public string Description { get; set; }
         public decimal Price { get; set; }
-        public Order MyOrder { get; set; }
+        public virtual Order MyOrder { get; set; }
 
         public Service()
         {
