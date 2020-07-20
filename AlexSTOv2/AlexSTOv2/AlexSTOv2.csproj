@@ -99,6 +99,7 @@
     <Content Include="Pages\Admin\Login.aspx" />
     <Content Include="Pages\Admin\Services.aspx" />
     <Content Include="Pages\CartView.aspx" />
+    <Content Include="Pages\Checkout.aspx" />
     <Content Include="Pages\Listing.aspx" />
     <None Include="Scripts\jquery-3.5.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.5.1.js" />
@@ -179,6 +180,13 @@
     </Compile>
     <Compile Include="Pages\CartView.aspx.designer.cs">
       <DependentUpon>CartView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Checkout.aspx.cs">
+      <DependentUpon>Checkout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Checkout.aspx.designer.cs">
+      <DependentUpon>Checkout.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Helpers\SessionHelper.cs" />
     <Compile Include="Pages\Listing.aspx.cs">

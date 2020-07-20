@@ -32,10 +32,10 @@ namespace AlexSTOv2.Pages
 
         public IEnumerable<AlexSTOv2.Models.Service> GetServices()
         {
-            IEnumerable<Service> serv=null;
-            return serv;
+            //IEnumerable<Service> serv=null;
+            //return serv;
 
-            //return SessionHelper.GetCart(Session).MyServices;   Так правильно, но какойто error
+            return SessionHelper.GetCart(Session).MyServices; /* Так правильно, но какойто error*/
         }
 
 

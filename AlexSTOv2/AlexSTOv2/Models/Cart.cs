@@ -31,8 +31,14 @@ namespace AlexSTOv2.Models
 
         public void AddItem(Service serv, int quantity)
         {
-            
-            //MyServices.ToList().Add(serv);   Походу новый клас нужен
+
+
+
+            if (MyServices != null)
+            {
+                MyServices.ToList().Add(serv); /*Походу новый клас нужен*/
+            }
+
 
 
 
