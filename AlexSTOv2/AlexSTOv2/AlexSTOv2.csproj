@@ -80,6 +80,7 @@
     <Content Include="Controls\SomeList.ascx" />
     <Content Include="Global.asax" />
     <Content Include="Pages\Admin\Goodts.aspx" />
+    <Content Include="Pages\Admin\Login.aspx" />
     <Content Include="Pages\Admin\Services.aspx" />
     <Content Include="Pages\Listing.aspx" />
     <None Include="Scripts\jquery-3.5.1.intellisense.js" />
@@ -132,6 +133,13 @@
     </Compile>
     <Compile Include="Pages\Admin\Goodts.aspx.designer.cs">
       <DependentUpon>Goodts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Admin\Services.aspx.cs">
       <DependentUpon>Services.aspx</DependentUpon>
