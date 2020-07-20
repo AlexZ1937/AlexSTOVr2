@@ -6,19 +6,18 @@
 <head runat="server">
     <link rel="stylesheet" href="../Content/Style.css">
     <title>STO</title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+    <%: System.Web.Optimization.Scripts.Render("~/bundles/validation") %>
 </head>
 <body>
     <form id="form1" runat="server">
-          <div id="header">
-              <div class="title">Just STO</div>
-          </div>
-          <div id="categories">        
-            <GS:SomeList runat="server" />
-          </div>
+        <div id="header">
+            <GS:CartConf runat="server"/>
+            <div class="title">Just STO</div>
+        </div>
+        <div id="categories">        
+          <GS:SomeList runat="server" />
+        </div>
         <div>
-
             <asp:ContentPlaceHolder ID="bodyContent" runat="server"/>
         </div>
     </form>

@@ -7,27 +7,36 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AlexSTOv2.Pages {
+namespace AlexSTOv2.Controls {
     
     
-    public partial class Site1 {
+    public partial class CartConf {
         
         /// <summary>
-        /// form1 control.
+        /// csQuantity control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl csQuantity;
         
         /// <summary>
-        /// bodyContent control.
+        /// csTotal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder bodyContent;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl csTotal;
+        
+        /// <summary>
+        /// csLink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor csLink;
     }
 }

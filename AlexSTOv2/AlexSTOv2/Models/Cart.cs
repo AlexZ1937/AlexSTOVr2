@@ -11,23 +11,40 @@ namespace AlexSTOv2.Models
         public int SKindex { get; set; }
         public decimal Price { get; set; }
         public IEnumerable<Service> MyServices { get; set; }
+      
 
         public Cart()
         {
            
         }
 
-        public void AddItem(Service game, int quantity)
+        public decimal ComputeTotalPrice()
         {
-        //    CartLine cartLine = lineCollection.Where(p => p.Game.GameId == game.GameId).FirstOrDefault();
-        //    if (cartLine == null)
-        //    {
-        //        lineCollection.Add(new CartLine() { Game = game, Quantity = quantity });
-        //    }
-        //    else
-        //    {
-        //        cartLine.Quantity += quantity;
-        //    }
+            return 0;
+            //return lineCollection.Sum(e => e.Game.Price * e.Quantity);
+        }
+
+        public void RemoveLine(Service service)
+        {
+            //lineCollection.RemoveAll(l => l.Game.GameId == game.GameId);
+        }
+
+        public void AddItem(Service serv, int quantity)
+        {
+            
+            //MyServices.ToList().Add(serv);   Походу новый клас нужен
+
+
+
+
+            //if (MyServices == null)
+            //{
+            //    lineCollection.Add(new CartLine() { Game = game, Quantity = quantity });
+            //}
+            //else
+            //{
+            //    cartLine.Quantity += quantity;
+            //}
         }
 
         public Cart(int ID_, int SKindex_, decimal Price_, IEnumerable<Service> Service_ServiceId_)
