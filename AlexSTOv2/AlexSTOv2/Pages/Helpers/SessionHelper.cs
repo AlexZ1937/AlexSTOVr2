@@ -29,6 +29,8 @@ namespace AlexSTOv2.Pages.Helpers
             return cart;
         }
 
+
+
         public static T Get<T>(HttpSessionState session, SessionKey key)
         {
             object dataValue = session[Enum.GetName(typeof(SessionKey), key)];

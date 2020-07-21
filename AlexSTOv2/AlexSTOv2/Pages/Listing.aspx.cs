@@ -58,9 +58,18 @@ namespace AlexSTOv2.Pages
                 IEnumerable<Service> Services = repository.Services;
                 string currentCategory = (string)RouteData.Values["category"] ??
                     Request.QueryString["category"];
+               
             //Services.Where(k => k.MyCategory.Name == currentCategory).FirstOrDefault().MyOrder=new Order(1,new Good(1,"hello",34),34);
+               
+                   foreach(Service item in Services.ToList())
+                   { 
+                        if(item.MyOrder==null)
+                        {
+                                item.MyOrder = new Order(0,new Good(0,item.Description,0),0);
+                        }
+                   }
                 return currentCategory == null ? Services : Services.Where(p => p.MyCategory.Name == currentCategory);
-            }
+        }
 
 
 
@@ -78,8 +87,10 @@ namespace AlexSTOv2.Pages
                         Service selectedGame = repository.Services.Where(g => g.ServiceId == selectedServiceId).FirstOrDefault();
                         if (selectedGame != null)
                         {
-                            SessionHelper.GetCart(Session).AddItem(selectedGame, 1);
-                            SessionHelper.Set(Session, SessionKey.RETURN_URL, Request.RawUrl);
+                            //SessionHelper.GetCart(Session).AddItem(selectedGame, 1);
+                            //SessionHelper.Set(Session, SessionKey.RETURN_URL, Request.RawUrl);
+                            
+                        repository.
 
                             Response.Redirect(RouteTable.Routes.GetVirtualPath(null, "cart", null).VirtualPath);
                         }

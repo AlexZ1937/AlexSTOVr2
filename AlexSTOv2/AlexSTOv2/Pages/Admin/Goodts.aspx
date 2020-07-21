@@ -21,7 +21,7 @@
                 <td><%# Item.Name %></td>
                 <td><%# Item.Price.ToString("C") %></td>
                 <td>
-                    <asp:Button ID="Button1"Нача CommandName="Edit" Text="Изменить" runat="server" />
+                    <asp:Button ID="Button1" CommandName="Edit" Text="Изменить" runat="server" />
                     <asp:Button ID="Button2" CommandName="Delete" Text="Удалить" runat="server" />
                 </td>
             </tr>
