@@ -90,7 +90,7 @@ namespace AlexSTOv2.Pages
                             //SessionHelper.GetCart(Session).AddItem(selectedGame, 1);
                             //SessionHelper.Set(Session, SessionKey.RETURN_URL, Request.RawUrl);
                             
-                        repository.
+                     
 
                             Response.Redirect(RouteTable.Routes.GetVirtualPath(null, "cart", null).VirtualPath);
                         }

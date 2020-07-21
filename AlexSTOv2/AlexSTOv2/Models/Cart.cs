@@ -8,9 +8,10 @@ namespace AlexSTOv2.Models
     public class Cart
     {
         public int ID { get; set; }
-        public int SKindex { get; set; }
+      
         public decimal Price { get; set; }
-        public Service MyServices { get; set; } // что если по SK добавлять покупки в общую таблицу(но тогда как проложить связь с клиентом? индекс все время новый, а связь должна быть к Primary Key)
+
+    // что если по SK добавлять покупки в общую таблицу(но тогда как проложить связь с клиентом? индекс все время новый, а связь должна быть к Primary Key)
       
 
         public Cart()
@@ -53,12 +54,12 @@ namespace AlexSTOv2.Models
             //}
         }
 
-        public Cart(int ID_, int SKindex_, decimal Price_, Service Service_ServiceId_)
+        public Cart(int ID_, decimal Price_)
         {
             this.ID = ID_;
-            this.SKindex = SKindex_;
+          
             this.Price = Price_;
-            this.MyServices = Service_ServiceId_;
+         
         }
     }
 }

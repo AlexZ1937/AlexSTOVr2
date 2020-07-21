@@ -13,11 +13,13 @@ namespace AlexSTOv2.Pages
 {
     public partial class CartView : System.Web.UI.Page
     {
+        public Client currentClient = new Client();
+        Repository repository = new Repository();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (IsPostBack)
             {
-                Repository repository = new Repository();
+                
                 int servId;
                 if (int.TryParse(Request.Form["remove"], out servId))
                 {
@@ -35,7 +37,7 @@ namespace AlexSTOv2.Pages
             //IEnumerable<Service> serv=null;
             //return serv;
 
-            return SessionHelper.GetCart(Session).MyServices; /* Так правильно, но какойто error*/
+            return repository.Services.Where(p => p.MyCart == currentClient.MyCart); /* Так правильно, но какойто error*/
         }
 
 
