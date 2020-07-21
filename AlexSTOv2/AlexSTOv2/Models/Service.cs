@@ -18,14 +18,12 @@ namespace AlexSTOv2.Models
         public decimal Price { get; set; }
         public virtual Order MyOrder { get; set; }
 
-        public virtual Cart MyCart { get; set; }
-
         public Service()
         {
            
         }
 
-        public Service(int ServiceId_, Category CategoryId_, Master MasterId_, Car CarId_, Order MyOrder_,decimal Price_, string Descript_, Cart Mycart)
+        public Service(int ServiceId_, Category CategoryId_, Master MasterId_, Car CarId_, Order MyOrder_,decimal Price_, string Descript_)
         {
             this.ServiceId = ServiceId_;
             this.MyCategory = CategoryId_;
@@ -34,7 +32,6 @@ namespace AlexSTOv2.Models
             this.MyOrder = MyOrder_;
             this.Price = Price_;
             this.Description = Descript_;
-            this.MyCart = Mycart;
         }
     }
 }

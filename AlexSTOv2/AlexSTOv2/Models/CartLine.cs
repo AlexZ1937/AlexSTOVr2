@@ -7,7 +7,10 @@ namespace AlexSTOv2.Models
 {
     public class CartLine
     {
-        List<Cart> Lineofcarts = new List<Cart>();
+        public int ID { get; set; }
+
+        public virtual Cart Somecart {get; set;}
+        public virtual Service buyservice { get; set; }
         public CartLine()
         {
             //пока не уверен пригодиться ли этот класс
