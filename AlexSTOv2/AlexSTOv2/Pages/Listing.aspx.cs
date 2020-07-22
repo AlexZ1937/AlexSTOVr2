@@ -60,8 +60,7 @@ namespace AlexSTOv2.Pages
                     Request.QueryString["category"];
 
             //Services.Where(k => k.MyCategory.Name == currentCategory).FirstOrDefault().MyOrder=new Order(1,new Good(1,"hello",34),34);
-            if (Services != null)
-            {
+           
                 foreach (Service item in Services.ToList())
                 {
                     if (item.MyOrder == null)
@@ -69,9 +68,9 @@ namespace AlexSTOv2.Pages
                         item.MyOrder = new Order(0, new Good(0, item.Description, 0), 0);
                     }
                 }
-            }
+            
                 return currentCategory == null ? Services : Services.Where(p => p.MyCategory.Name == currentCategory);
-        }
+            }
 
 
 
@@ -93,7 +92,7 @@ namespace AlexSTOv2.Pages
                             //SessionHelper.Set(Session, SessionKey.RETURN_URL, Request.RawUrl);
                             
                      
-
+                            
                             Response.Redirect(RouteTable.Routes.GetVirtualPath(null, "cart", null).VirtualPath);
                         }
                     }

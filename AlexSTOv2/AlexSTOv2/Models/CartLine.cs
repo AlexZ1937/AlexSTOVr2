@@ -15,5 +15,12 @@ namespace AlexSTOv2.Models
             //пока не уверен пригодиться ли этот класс
 
         }
+
+        public CartLine(Cart crt, Service srv)
+        {
+            this.Somecart = crt;
+            this.Buyservice = srv;
+
+        }
     }
 }
