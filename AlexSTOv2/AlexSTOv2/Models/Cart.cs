@@ -8,9 +8,9 @@ namespace AlexSTOv2.Models
     public class Cart
     {
         public int ID { get; set; }
-        public int SKindex { get; set; }
+        //public int SKindex { get; set; }
         public decimal Price { get; set; }
-        public IEnumerable<Service> MyServices { get; set; } // что если по SK добавлять покупки в общую таблицу(но тогда как проложить связь с клиентом? индекс все время новый, а связь должна быть к P)
+      /*  public IEnumerable<Service> MyServices { get; set; }*/ // что если по SK добавлять покупки в общую таблицу(но тогда как проложить связь с клиентом? индекс все время новый, а связь должна быть к P)
       
 
         public Cart()
@@ -56,9 +56,9 @@ namespace AlexSTOv2.Models
         public Cart(int ID_, int SKindex_, decimal Price_, IEnumerable<Service> Service_ServiceId_)
         {
             this.ID = ID_;
-            this.SKindex = SKindex_;
+            //this.SKindex = SKindex_;
             this.Price = Price_;
-            this.MyServices = Service_ServiceId_;
+            //this.MyServices = Service_ServiceId_;
         }
     }
 }

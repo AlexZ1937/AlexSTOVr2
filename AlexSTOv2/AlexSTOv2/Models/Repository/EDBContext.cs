@@ -20,5 +20,6 @@ namespace AlexSTOv2.Models.Repository
 
         public DbSet<Cart> Carts { get; set; }
 
+        public DbSet<CartLine> CartLines { get; set; }
     }
 }

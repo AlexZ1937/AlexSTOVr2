@@ -24,7 +24,7 @@ namespace AlexSTOv2.Models.Repository
 
         public IEnumerable<Order> Orders { get { return context.Orders; } }
 
-
+        public IEnumerable<CartLine> CartLines { get { return context.CartLines; } }
 
 
 

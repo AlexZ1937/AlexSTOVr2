@@ -13,11 +13,13 @@ namespace AlexSTOv2.Pages
 {
     public partial class CartView : System.Web.UI.Page
     {
+        Repository repository = new Repository();
+        Client currentclient = new Client();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (IsPostBack)
             {
-                Repository repository = new Repository();
+                //Repository repository = new Repository();
                 int servId;
                 if (int.TryParse(Request.Form["remove"], out servId))
                 {
@@ -32,10 +34,20 @@ namespace AlexSTOv2.Pages
 
         public IEnumerable<AlexSTOv2.Models.Service> GetServices()
         {
-            //IEnumerable<Service> serv=null;
+            ICollection<Service> services = new List<Service>();
+            //foreach (CartLine item in repository.CartLines)
+            //{
+            //    if(item.Somecart== currentclient.MyCart)
+            //    {
+            //        services.Add(item.Buyservice);
+            //    }
+            //}
+
+            IEnumerable<Service> serv=services;
             //return serv;
             
-            return SessionHelper.GetCart(Session).MyServices; /* Так правильно, но какойто error*/
+
+            return serv; /* Что-то намутил*/
         }
 
 
