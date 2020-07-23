@@ -17,7 +17,7 @@
         </div>
     </form>
     <div id="nav">
-         <a href="<%= ServicesUrl %>">Управление заказами</a>
+         <a href="<%= ServicesUrl %>">Управление услугами</a>
         <a href="<%= GoodtsUrl %>">Управление складом</a>
     </div>
 </body>
