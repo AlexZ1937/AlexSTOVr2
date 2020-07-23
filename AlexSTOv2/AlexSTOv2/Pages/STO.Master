@@ -20,6 +20,9 @@
         <div>
             <asp:ContentPlaceHolder ID="bodyContent" runat="server"/>
         </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentBanner" runat="server" />
+        </div>
     </form>
 </body>
 </html>

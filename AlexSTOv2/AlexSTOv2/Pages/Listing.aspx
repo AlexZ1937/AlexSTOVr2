@@ -3,6 +3,7 @@
 <asp:Content ContentPlaceHolderID="bodyContent" runat="server">
     <div id="content">
   
+  
       <asp:Repeater ItemType="AlexSTOv2.Models.Service" SelectMethod="GetServices" runat="server">
           <ItemTemplate>
               <div class="item">
@@ -27,4 +28,8 @@
             }
         %>
     </div>
+</asp:Content>
+<asp:Content ContentPlaceHolderID="ContentBanner" runat="server">
+        <div id="banner" style="position: absolute; top: 94%; width: 100%; height: 5%; text-align: center; font-size: 25px; left: 6px;">
+            Самая популярная услуга: </div>
 </asp:Content>
