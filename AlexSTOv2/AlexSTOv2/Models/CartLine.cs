@@ -18,6 +18,7 @@ namespace AlexSTOv2.Models
 
         public CartLine(Cart crt, Service srv)
         {
+            ID = 0;
             this.Somecart = crt;
             this.Buyservice = srv;
 

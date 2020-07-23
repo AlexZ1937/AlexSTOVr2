@@ -88,9 +88,9 @@ namespace AlexSTOv2.Pages
                         Service selectedGame = repository.Services.Where(g => g.ServiceId == selectedServiceId).FirstOrDefault();
                         if (selectedGame != null)
                         {
-                            //SessionHelper.GetCart(Session).AddItem(selectedGame, 1);
-                            //SessionHelper.Set(Session, SessionKey.RETURN_URL, Request.RawUrl);
-                            
+                        //SessionHelper.GetCart(Session).AddItem(selectedGame, 1);
+                        //SessionHelper.Set(Session, SessionKey.RETURN_URL, Request.RawUrl);
+                            repository.AddServiceToCart(selectedGame, repository.Clients.Where(p => p.ClientID == 3).FirstOrDefault().MyCart);
                      
                             
                             Response.Redirect(RouteTable.Routes.GetVirtualPath(null, "cart", null).VirtualPath);

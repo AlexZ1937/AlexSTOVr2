@@ -29,6 +29,7 @@ namespace AlexSTOv2.Models.Repository
         public void AddServiceToCart(Service serv,Cart cart)
         {
             CartLine dbcart = context.CartLines.Add(new CartLine(cart,serv));
+            context.SaveChanges();
         }
 
 

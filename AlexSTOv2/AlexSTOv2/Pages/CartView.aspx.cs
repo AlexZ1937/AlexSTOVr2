@@ -14,7 +14,7 @@ namespace AlexSTOv2.Pages
     public partial class CartView : System.Web.UI.Page
     {
         Repository repository = new Repository();
-        Client currentclient = new Client();
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             if (IsPostBack)
@@ -34,14 +34,15 @@ namespace AlexSTOv2.Pages
 
         public IEnumerable<AlexSTOv2.Models.Service> GetServices()
         {
+            Client currentclient = repository.Clients.Where(p => p.ClientID == 3).FirstOrDefault();
             ICollection<Service> services = new List<Service>();
-            //foreach (CartLine item in repository.CartLines)
-            //{
-            //    if(item.Somecart== currentclient.MyCart)
-            //    {
-            //        services.Add(item.Buyservice);
-            //    }
-            //}
+            foreach (CartLine item in repository.CartLines)
+            {
+                if (item.Somecart == currentclient.MyCart)
+                {
+                    services.Add(item.Buyservice);
+                }
+            }
 
             IEnumerable<Service> serv=services;
             //return serv;
